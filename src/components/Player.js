@@ -18,11 +18,7 @@ const Player = ({ loggedInUser, player }) => (
       <GridItem display="flex" alignItems="center" justifyContent="center">
         {player?.placement <= 3 ? (
           <Avatar
-            src={
-              "/carbon-footprint/icons/medal-for-place-" +
-              player.placement +
-              ".png"
-            }
+            src={"/icons/medal-for-place-" + player.placement + ".png"}
             w="40px"
             h="40px"
             mt=""

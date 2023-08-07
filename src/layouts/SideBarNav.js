@@ -7,6 +7,7 @@ const SideBarNav = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const pathname = location.pathname.replace("/", "");
+  console.log(pathname)
 
   const activePage = pathname
     .split("-")

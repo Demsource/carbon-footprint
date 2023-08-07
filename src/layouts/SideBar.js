@@ -23,7 +23,7 @@ const SideBar = () => {
           pb="15px"
         >
           <Image
-            src="/carbon-footprint/cf-logo.png"
+            src="/cf-logo.png"
             alt="My Carbon Footprint App Logo"
             h="65px"
             mr="5px"
