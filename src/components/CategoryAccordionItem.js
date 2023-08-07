@@ -22,6 +22,7 @@ const CategoryAccordionItem = ({
   categoryName,
   categoryCFReduceValue,
   saveCategoryCFReduceValue,
+  timingDate,
   ...rest
 }) => {
   const [sliderValue, setSliderValue] = useState(0);
@@ -119,7 +120,7 @@ const CategoryAccordionItem = ({
                       user: {
                         id: "clkk8ue3kdzx10ataqxn5zidx",
                       },
-                      date: "2023-08-31",
+                      date: timingDate,
                       timing,
                       data: {
                         [`offsetGoal${categoryName}CF`]: sliderValue,

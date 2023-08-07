@@ -12,6 +12,7 @@ const PieChartDescList = ({ data, side }) => {
       mt="-20px"
       mb="20px"
       mr={side && { lg: "30px" }}
+      zIndex={9}
     >
       {data.map((item, index) => (
         <ListItem

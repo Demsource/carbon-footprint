@@ -63,6 +63,9 @@ const ChooseCFOffset = ({ timing }) => {
                 0
               }
               saveCategoryCFReduceValue={updateUserGoals}
+              timingDate={
+                timing === "Month" ? fakeGoalDate.Month : fakeGoalDate.Year
+              }
               mb="20px"
             />
           );
