@@ -11,43 +11,48 @@ import YourProgress from "./routes/your-progress";
 // import Donations from "./routes/donations";
 // import { PrifinaProvider, PrifinaContext } from "@prifina/hooks-v2";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: (
+        <AppProvider>
+          <Root />
+        </AppProvider>
+      ),
+      errorElement: (
+        <Root>
+          <ErrorPage />
+        </Root>
+      ),
+      children: [
+        {
+          path: "/",
+          element: <Dashboard />,
+        },
+        {
+          path: "/leaderboard",
+          element: <Leaderboard />,
+        },
+        {
+          path: "/tips",
+          element: <Tips />,
+        },
+        {
+          path: "/your-progress",
+          element: <YourProgress />,
+        },
+        // {
+        //   path: "/donations",
+        //   element: <Donations />,
+        // },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: (
-      <AppProvider>
-        <Root />
-      </AppProvider>
-    ),
-    errorElement: (
-      <Root>
-        <ErrorPage />
-      </Root>
-    ),
-    children: [
-      {
-        path: "/",
-        element: <Dashboard />,
-      },
-      {
-        path: "/leaderboard",
-        element: <Leaderboard />,
-      },
-      {
-        path: "/tips",
-        element: <Tips />,
-      },
-      {
-        path: "/your-progress",
-        element: <YourProgress />,
-      },
-      // {
-      //   path: "/donations",
-      //   element: <Donations />,
-      // },
-    ],
-  },
-]);
+    basename: "/carbon-footprint",
+  }
+);
 
 function App() {
   return (
