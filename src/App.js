@@ -14,7 +14,7 @@ import YourProgress from "./routes/your-progress";
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/carbon-footprint",
       element: (
         <AppProvider>
           <Root />
@@ -27,19 +27,19 @@ const router = createBrowserRouter(
       ),
       children: [
         {
-          path: "/",
+          path: "/carbon-footprint",
           element: <Dashboard />,
         },
         {
-          path: "/leaderboard",
+          path: "/carbon-footprint/leaderboard",
           element: <Leaderboard />,
         },
         {
-          path: "/tips",
+          path: "/carbon-footprint/tips",
           element: <Tips />,
         },
         {
-          path: "/your-progress",
+          path: "/carbon-footprint/your-progress",
           element: <YourProgress />,
         },
         // {
