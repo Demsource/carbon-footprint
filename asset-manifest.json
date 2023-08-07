@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/carbon-footprint/static/css/main.2b79aa60.css",
-    "main.js": "/carbon-footprint/static/js/main.ca92f5c2.js",
+    "main.js": "/carbon-footprint/static/js/main.ae1f014c.js",
     "static/media/inter-latin-ext-400-normal.woff": "/carbon-footprint/static/media/inter-latin-ext-400-normal.3ccf133441ba225afa51.woff",
     "static/media/inter-latin-400-normal.woff": "/carbon-footprint/static/media/inter-latin-400-normal.662f290710a57b8dfbbd.woff",
     "static/media/inter-latin-ext-400-normal.woff2": "/carbon-footprint/static/media/inter-latin-ext-400-normal.3a7a76525d98d25962eb.woff2",
@@ -52,10 +52,10 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/carbon-footprint/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "index.html": "/carbon-footprint/index.html",
     "main.2b79aa60.css.map": "/carbon-footprint/static/css/main.2b79aa60.css.map",
-    "main.ca92f5c2.js.map": "/carbon-footprint/static/js/main.ca92f5c2.js.map"
+    "main.ae1f014c.js.map": "/carbon-footprint/static/js/main.ae1f014c.js.map"
   },
   "entrypoints": [
     "static/css/main.2b79aa60.css",
-    "static/js/main.ca92f5c2.js"
+    "static/js/main.ae1f014c.js"
   ]
 }
