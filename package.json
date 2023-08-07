@@ -1,0 +1,82 @@
+{
+  "name": "carbon-footprint",
+  "version": "1.0.0",
+  "author": "Demi <demidevcode@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.7.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/inter": "^5.0.5",
+    "@fontsource/open-sans": "^5.0.5",
+    "@fontsource/outfit": "^5.0.5",
+    "@fontsource/roboto": "^5.0.5",
+    "@nivo/bar": "^0.83.0",
+    "@nivo/line": "^0.83.0",
+    "@nivo/pie": "^0.83.0",
+    "@prifina/hooks-v2": "latest",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "framer-motion": "^10.12.16",
+    "graphql": "^16.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@chakra-ui/storybook-addon": "^5.0.1",
+    "@dynamic-data/google-data": "^0.0.9",
+    "@dynamic-data/google-mockups": "^0.0.15",
+    "@dynamic-data/uber-data": "^1.0.4",
+    "@dynamic-data/uber-mockups": "^1.0.9",
+    "@storybook/addon-a11y": "^7.2.1",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/manager-api": "^7.2.1",
+    "@storybook/preset-create-react-app": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/react-webpack5": "^7.2.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/theming": "^7.2.1",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint-plugin-storybook": "^0.6.13",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.2.1",
+    "webpack": "^5.88.1"
+  }
+}
