@@ -2,7 +2,7 @@ import { Box, Heading } from "@chakra-ui/react";
 import SetTiming from "./SetTiming";
 import ChooseCFOffset from "./ChooseCFOffset";
 
-const SetGoal = ({ timing, changeTiming, waitList }) => {
+const SetGoal = ({ timing, changeTiming }) => {
   return (
     <Box>
       <Heading fontFamily="inter" fontSize="25px">
@@ -10,7 +10,7 @@ const SetGoal = ({ timing, changeTiming, waitList }) => {
       </Heading>
       <Box>
         <SetTiming timing={timing} changeTiming={changeTiming} />
-        <ChooseCFOffset timing={timing} waitList={waitList} />
+        <ChooseCFOffset timing={timing} />
       </Box>
     </Box>
   );
