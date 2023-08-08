@@ -111,7 +111,24 @@ const YourProgress = () => {
           overflowY="auto"
           sx={scrollBarStyles}
         >
-          <SetGoal timing={timing} changeTiming={changeTiming} />
+          <SetGoal
+            timing={timing}
+            changeTiming={changeTiming}
+            waitList={{
+              loadings: [
+                loading_ltm_CF_Monthly_LastMonth,
+                loading_ltm_CF_Monthly_BeforeLastMonth,
+                loading_lastYear_CF_Categorized,
+                loading_beforeLastYear_CF_Categorized,
+              ],
+              errors: [
+                error_ltm_CF_Monthly_LastMonth,
+                error_ltm_CF_Monthly_BeforeLastMonth,
+                error_lastYear_CF_Categorized,
+                error_beforeLastYear_CF_Categorized,
+              ],
+            }}
+          />
         </GridItem>
         <GridItem colSpan={{ base: 2, xl: 1 }}>
           <PieChart

@@ -4,7 +4,7 @@ import { Accordion, Heading } from "@chakra-ui/react";
 import CategoryAccordionItem from "./CategoryAccordionItem";
 import { useCategoryNames } from "../AppContext";
 
-const ChooseCFOffset = ({ timing }) => {
+const ChooseCFOffset = ({ timing, waitList }) => {
   const categoryNames = useCategoryNames();
 
   const fakeGoalDate = {
@@ -59,6 +59,10 @@ const ChooseCFOffset = ({ timing }) => {
               categoryName={categoryName}
               categoryCFReduceValue={
                 (!loadingUserGoal &&
+                  waitList.loadings.filter((waitItem) => waitItem).length ===
+                    0 &&
+                  waitList.errors.filter((waitItem) => !!waitItem).length ===
+                    0 &&
                   userGoal?.userGoals?.[0]?.[`offsetGoal${categoryName}CF`]) ||
                 0
               }
